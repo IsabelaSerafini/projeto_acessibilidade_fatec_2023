@@ -4,41 +4,61 @@
 
 
 body{
-    background-color: rgb(187, 139, 146);
+    background-color: rgb(138, 61, 72);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 90vw;
     height: 90vh;
 }
-main{
-    height: 100%;
-    width: 100%;
+
+
+.pai{
+    display: grid;
 }
 
-.conteudo{
-    width: 900px;
-    height: 100%;
-    color: white;
-    position: relative;
-    top: 1vh;
+
+.cab{
+    background-color: rgb(255, 248, 243);
+    grid-area: cab;
+}
+
+.cont{
+    grid-area: cont;
+    margin-left: 10vh ;
+}
+
+.rod{
+    background-color: green;
+
+}
+
+.cont1{
+    grid-area: cont2; 
+}
+
+.gta{
+    grid-template-areas: "cab cab"
+                         "cont cont2";
+                         
+
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 5vh 95vh;
+     
+}
+
+
+
+.texto{
+    color:white;
 }
 
 .DivImg{
-    position: relative;
+    margin-top: 15px;
     width: 300px;
-    height: 300px;
-    left: 8vh;
-    top: 1vh;    
+    height: 300px;    
+    margin-left: 10px;
     border-radius: 100px;       
-    background: linear-gradient(to left top, rgb(236, 201, 206), rgb(187, 139, 146));
+    background: linear-gradient(to left top, rgb(236, 201, 206),rgb(138, 61, 72));
 }
-
-.conteudo1{
-    position: relative;
-    width: 600px;
-    left: 65vh;
-    top: -48vh;
-}
-
 
 img{
     width: 90%;
@@ -46,14 +66,24 @@ img{
     padding: 15px;
     display: block;
     border-radius: 100px;    
+    
 }
 
+.conteudo{
+    width: 900px;
+    height: 100%;
+    color: white;
+    top: 1vh;
+}
+
+.conteudo1{
+    margin-top: 10px;
+    width: 600px;
+    left: 65vh;
+}
 
 .contatos{
-    position: relative;
+    margin-left: 20px;
     color: white;
     width: 300px;
-    top: -89vh;
-    left: 10vh;
-
 }
