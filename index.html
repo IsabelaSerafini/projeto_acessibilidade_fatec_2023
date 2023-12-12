@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Acessibilidade</title>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget({
+          rootPah: '/app',
+          personalization: 'https://vlibras.gov.br/config/default_logo.json',
+          opacity: 0.5,
+          position: 'L',
+          avatar: 'random',
+      });
+    </script>
+    <script defer>
+        var passou = 0
+        function zoom(){
+           let corpo = document.getElementById('body')
+
+            if(passou == 0){
+                corpo.style.fontSize = '30px'
+                passou = 1
+            }
+            else{
+                corpo.style.fontSize = '18px'
+            }
+        }
+    </script>    
+</head>
+<body id="body">
+    <div class="pai gta">
+        <header class="item cab"> <button onclick="zoom()">Zoom</button></header>        
+        <main class="item cont">
+
+            <div class="DivImg">
+                <img id="eu" src="eu.jfif" title="Isabela Cristina Paulino Serafini" alt="Mulher branca sorrindo, olhos castanhos cabelos cacheados castanho escuro, usando uma blusa branca.">
+            </div>          
+            <div class="contatos">
+                <h2>Contatos</h2>
+                <br>
+                <label >Email: isabelaserafini18@gmail.com</label>
+                <br><br>
+                <label>Telefone: (16) 996312606</label>
+                <br><br>
+                <label for="linkedin">Linkedin:</label>
+                <br>
+                <a class="texto" href="https://www.linkedin.com/in/isabelacristinapaulinoserafini/" id="linkedin" name="linkedin">Clickando neste link você pode acessar meu Linkedin</a>
+
+            </div>              
+        </main>
+        <div class="item cont2">
+            <div class="conteudo1">
+                <h1 class="texto">Isabela Cristina Paulino Serafini</h1>
+                <br>
+                <h2 class="texto" id="ph2">Apresentação</h2>
+                <br>
+                <p class="texto" id="p1">
+                    Olá, eu sou a Isabela aluna da Fatec Taquaritinga.<br>
+                    Faço o curso de Sistemas para Internet, estou atualmente no segundo semestre<br>
+                    e estou finalizando meu primeiro ano de faculdade, restaram mais dois pela <br>
+                    frente. O período que frequento é o matutino.
+                </p>
+                <br>
+                <h2 class="texto" id="sh2">Sobre mim</h2>
+                <br>
+                <p class="texto" id="p2">
+                    Agora falando um pouco sobre mim, tenho 18 anos <br>
+                    Sou nativa da cidade de Taquaritinga - SP, sempre tive acesso <br>
+                    e me interessei muito pela área de tecnologia, atualmente sou <br>
+                    desenvolvedora back-end, espero poder continuar nesta área <br> 
+                    me aperfeiçoar cada vez mais.
+                </p>
+                <br>    
+                <h2 class="texto" id="th2">Sobre a faculdade</h2>
+                <br>
+                <p class="texto" id="p3">
+                    Como disse sou desenvolvedora back-end, mas meu curso <br>
+                    tem me proporcionado muito aprendizado sobre front-end <br>
+                    Ter a oportunidade de todo semestre desenvolver um projeto <br>
+                    que é praticamente  um TCC(Trabalho de Conclusão de curso), <br>
+                    é desafiador, existe a parte de adaptação há rotina da faculdade <br>
+                    mas é muito prazeroso ver a evolução não só pessoal mas em grupo.
+                </p>
+                </div>            
+
+        </div>
+        <div class="ultimo">
+            <h2 class="texto comp">Conhecimentos</h2>
+            <br><br>
+            <div class="conhe">
+                <div class="img">
+                    <img class="ftG" src="fotos/css.jpg" alt="Logotipo da linguagem de estilização css, escudo azul com o número 3 no centro e do lado de fora escrito CSS">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank">Quer conhecer mais sobre CSS? Cique neste link</a>
+                </div>
+                <div class="img">
+                    <img class="ftG" src="fotos/html.jpg" alt="Logotipo da linguagem de marcação HTML, escudo laranja com o número 5 no centro e do lado de fora escrito HTML">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics">Quer conhecer mais sobre HTML? Cique neste link</a>                    
+                </div>
+                <div class="img">
+                    <img class="ftG" src="fotos/js.png" alt="Logotipo da linguagem de programação Java Script, escudo amarelo com a letra S no centro e do lado de fora escrito JS">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript">Quer conhecer mais sobre JavaScript? Cique neste link</a>                    
+                </div>
+                <div class="img">
+                    <img class="ftG" src="fotos/delphi.jpg" alt="Logotipo da linguagem de programação Delphi, fundo branco símbolo da empresa responsável pela linguagem ao lado esquerdo e a direita escrito Delphi">
+                    <a href="https://www.devmedia.com.br/entenda-a-delphi-language/31353" target="_blank">Quer conhecer mais sobre Delphi? Cique neste link</a>                    
+                </div>
+                <div class="img">
+                    <img class="ftG" src="fotos/sql.jpg" alt="Logotipo do aplicativo de gerenciamento de dados SQL Sever, escrito SQl Server">
+                    <a href="https://learn.microsoft.com/pt-br/sql/sql-server/what-is-sql-server?view=sql-server-ver16">Quer conhecer mais sobre SQL Server? Cique neste link</a>                    
+                </div>
+            </div>
+            <br><br>
+        </div>
+
+    </div> 
+
+
+     <!-- Conteúdo da página -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div> 
+    </div>   
+ 
+</body>
+
+</html>

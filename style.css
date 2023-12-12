@@ -1,0 +1,133 @@
+*{
+    margin:0;
+}
+
+
+body{
+    background-color: rgb(138, 61, 72);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90vw;
+    height: 90vh;
+    overflow-x: hidden;
+}
+
+
+.pai{
+    display: grid;
+}
+
+
+.cab{
+    background-color: rgb(255, 248, 243);
+    grid-area: cab;
+}
+
+.cont{
+    grid-area: cont;
+    margin-left: 10vh ;
+}
+
+.ultimo a{
+    font-weight: bold;
+    color: black;
+
+}
+
+.rod{
+    background-color: green;
+
+}
+
+.cont1{
+    grid-area: cont2; 
+}
+
+.ultimo{
+    grid-area: ultimo;
+    border-top: 1px solid white;
+}
+
+.gta{
+    grid-template-areas: "cab cab"
+                         "cont cont2"
+                         "ultimo ultimo";
+
+                         
+
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 5vh 95vh 35vh;
+     
+}
+
+
+
+.texto{
+    color:white;
+}
+
+.comp{
+    margin-top: 5vh;
+    margin-left: 10vh;
+}
+
+
+.conhe{
+    display: flex;
+    flex-wrap: row wrap;
+    gap: 25px;
+    justify-content: center;
+    text-align: center;    
+}
+
+.img{
+    height: 200px;
+    width: 240px;
+    background-color: whitesmoke;
+    box-shadow: 5px  5px 5px  rgba(0, 0, 0, 0.645);
+    
+}
+
+.ftG{
+    width: 100%;
+    height: 150px;
+    display: flex;
+   
+}
+
+.DivImg{
+    margin-top: 15px;
+    width: 300px;
+    height: 300px;    
+    margin-left: 10px;
+    border-radius: 100px;       
+    background: linear-gradient(to left top, rgb(236, 201, 206),rgb(138, 61, 72));
+}
+
+#eu{
+    width: 90%;
+    height: 90%;
+    padding: 15px;
+    display: block;
+    border-radius: 100px;    
+  
+}
+
+.conteudo{
+    width: 900px;
+    height: 100%;
+    color: white;
+    top: 1vh;
+}
+
+.conteudo1{
+    margin-top: 10px;
+    width: 600px;
+    left: 65vh;
+}
+
+.contatos{
+    margin-left: 20px;
+    color: white;
+    width: 300px;
+}
+
